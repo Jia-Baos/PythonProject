@@ -1,0 +1,13 @@
+nodes:
+  - id: webcam
+    operator:
+      python: webcam.py
+      inputs:
+        tick: dora/timer/millis/100
+      outputs:
+        - image
+  - id: plot
+    operator:
+      python: plot.py
+      inputs:
+        image: webcam/image
