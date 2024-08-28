@@ -18,6 +18,7 @@ model:
       model_size: 1.0x
       out_stages: [2,3,4]
       activation: LeakyReLU
+      pretrain: False
     fpn:
       name: GhostPAN
       in_channels: [116, 232, 464]

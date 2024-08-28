@@ -39,11 +39,13 @@ def load_config(cfg, args_cfg):
     # common params for NETWORK
     print()
     print("Jia-Baos, cfg.model.weight_averager: ")
-    print(cfg.model.weight_averager)
+    if "weight_averager" in cfg.model:
+        print(cfg.model.weight_averager)
     
     print()
     print("Jia-Baos, cfg.model.arch: ")
-    print(cfg.model.arch)
+    if "arch" in cfg.model:
+        print(cfg.model.arch)
 
     # DATASET related params
     print()
@@ -67,7 +69,8 @@ def load_config(cfg, args_cfg):
     # grad_clip
     print()
     print("Jia-Baos, cfg.grad_clip: ")
-    print(cfg.grad_clip)
+    if "grad_clip" in cfg:
+        print(cfg.grad_clip)
 
     # evaluator:
     print()

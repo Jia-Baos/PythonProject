@@ -3,6 +3,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 project(nanodet_demo)
 
+set(CMAKE_PREFIX_PATH /opt/intel/openvino_2022/runtime/cmake)
 find_package(OpenCV REQUIRED)
 find_package(InferenceEngine REQUIRED)
 find_package(ngraph REQUIRED)

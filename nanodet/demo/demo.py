@@ -114,7 +114,7 @@ def main():
 
     load_config(cfg, args.config)
     logger = Logger(
-        local_rank, "/home/jia-baos/Project-Python/nanodet/res", use_tensorboard=False
+        local_rank, "./", use_tensorboard=False
     )
 
     logger.log("args.demo: " + args.demo)

@@ -1,0 +1,38 @@
+-i https://pypi.tuna.tsinghua.edu.cn/simple	// 从清华源安装库
+
+有 pytorch_lighting 要求时，优先安装 pytorch_lighting
+
+Traceback (most recent call last):
+  File "demo/demo.py", line 9, in <module>
+    from nanodet.data.collate import naive_collate
+  File "/home/jia-baos/Project-Python/nanodet/nanodet/data/collate.py", line 19, in <module>
+    from torch._six import string_classes
+ModuleNotFoundError: No module named 'torch._six'
+
+[参考链接](https://blog.csdn.net/BetrayFree/article/details/137692591)
+
+
+Traceback (most recent call last):
+  File "demo/demo.py", line 11, in <module>
+    from nanodet.model.arch import build_model
+  File "/home/jia-baos/Project-Python/nanodet/nanodet/model/arch/__init__.py", line 18, in <module>
+    from .nanodet_plus import NanoDetPlus
+  File "/home/jia-baos/Project-Python/nanodet/nanodet/model/arch/nanodet_plus.py", line 19, in <module>
+    from ..head import build_head
+  File "/home/jia-baos/Project-Python/nanodet/nanodet/model/head/__init__.py", line 3, in <module>
+    from .gfl_head import GFLHead
+  File "/home/jia-baos/Project-Python/nanodet/nanodet/model/head/gfl_head.py", line 10, in <module>
+    from nanodet.util import (
+  File "/home/jia-baos/Project-Python/nanodet/nanodet/util/__init__.py", line 2, in <module>
+    from .check_point import (
+  File "/home/jia-baos/Project-Python/nanodet/nanodet/util/check_point.py", line 18, in <module>
+    import pytorch_lightning as pl
+ModuleNotFoundError: No module named 'pytorch_lightning'
+
+[参考链接](https://lightning.ai/docs/pytorch/latest/versioning.html#compatibility-matrix)
+
+对于 onnxsim 无法通过 conda 和 pip 安装的解决方案
+
+python3.12 -m pip install onnxsim -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+source /opt/intel/openvino_2022/setupvars.sh

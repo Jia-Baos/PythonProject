@@ -1,0 +1,8 @@
+INFO:root:args.demo: image
+INFO:root:args.config: ./config/nanodet-plus-m-1.5x_416.yml
+INFO:root:args.model: ./pth/nanodet-plus-m-1.5x_416.pth
+INFO:root:args.path: ./imgs/1.png
+INFO:root:args.save_result: True
+INFO:root:Press "Esc", "q" or "Q" to exit.
+INFO:root:image_name: ./imgs/1.png
+INFO:root:save_folder: workspace/nananodet-plus-m-1.5x_416/2024_08_26_22_24_39
