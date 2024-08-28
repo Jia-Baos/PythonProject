@@ -114,6 +114,6 @@ venv.bak/
 work_dirs/
 
 # Pytorch
-*.pth
+# *.pth
 *.py~
 *.sh~
